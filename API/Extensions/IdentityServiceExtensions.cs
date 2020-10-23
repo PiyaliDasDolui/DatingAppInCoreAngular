@@ -7,7 +7,7 @@ namespace API.Extensions
 {
     public static class IdentityServiceExtensions
     {
-        public static IServiceColletion AddIdentityServices(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddIdentityServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options => 
